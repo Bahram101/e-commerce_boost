@@ -35,7 +35,7 @@
         </div>
 
         <div class="header__bottom">
-            <div class=" container d-flex align-items-center justify-content-between">
+            <div class="container d-flex align-items-center justify-content-between">
                 <a class="logo">
                     <img src="img/logo.png" srcset="img/logo@2x.png 2x" height="70" alt="logo" />
                 </a>
@@ -85,21 +85,185 @@
                 </ol>
             </nav>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3 ">
                     <div class="sidebar">
                         <div class="sidebar__category-name">
                             <h1>Products</h1>
                         </div>
 
                         <div class="sidebar__sort">
-
+                            <select class="selectpicker">
+                                <option title="Combo 1">Rating</option>
+                                <option title="Combo 2">A-Z</option>
+                                <option title="Combo 3">Z-A</option>
+                            </select>
                         </div>
 
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="content">
+                        <div class="sidebar__filter">
+                            <div class="filter__icons d-flex justify-content-between">
+                                <div class="filter__icon-left d-flex">
+                                    <img src="img/filter.png" alt="filter">
+                                    <div>Filters(<span>1</span>)</div>
+                                </div>
+                                <div class="filter__icon-right d-flex">
+                                    <img src="img/filter-loader.png" alt="filter-loader">
+                                    <div>Clear all</div>
+                                </div>
+                            </div>
+                            <div class="filter__selected">
+                                <span>Everyday Nutrition</span>
+                            </div>
+                        </div>
 
+                        <div class="sidebar__flavors">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#flavors" aria-expanded="true" aria-controls="collapseOne">
+                                                Flavors
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="flavors" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Berry">
+                                                <label for="Berry">Berry</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Chocolate">
+                                                <label for="Chocolate">Chocolate</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Orange">
+                                                <label for="Orange">Orange</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Peach">
+                                                <label for="Peach">Peach</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Strawberry">
+                                                <label for="flStrawberryavor5">Strawberry</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Vanilla">
+                                                <label for="Vanilla">Vanilla</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Variety Pack">
+                                                <label for="Variety Pack">Variety Pack</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar__category">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                data-target="#category" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Flavors
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="category" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Liquid">
+                                                <label for="Liquid">Clear Liquid Nutrition</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Diabetes">
+                                                <label for="Diabetes">Diabetes nutrition</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Everyday">
+                                                <label for="Everyday"> Everyday Nutrition</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Calorie">
+                                                <label for="Calorie">High Calorie</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Protein">
+                                                <label for="Protein">High Protein</label>
+                                            </div>
+                                            <div class="input-field">
+                                                <input type="checkbox" id="Specialized">
+                                                <label for="Specialized"> Specialized Nutrition</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-9">
+                    <div class="content">
+                        <div class="product-list">
+                            <div class="row">
+                                <div class="col-md-4 col=sm-6">
+                                    <div class="product-item">
+                                        <div class="product-title">
+                                            BOOST® Original
+                                        </div>
+                                        <div class="product-img">
+                                            <img src="img/original.png" height="150" alt="boost">
+                                        </div>
+                                        <div class="product-flavors">
+                                            <select class="selectpicker">
+                                                <option title="Combo 1">Rating</option>
+                                                <option title="Combo 2">A-Z</option>
+                                                <option title="Combo 3">Z-A</option>
+                                            </select>
+                                        </div>
+                                        <div class="product-prices">
+                                            <div class="product-subscribe ">
+                                                <div class="product-subscribe--top d-flex justify-content-between">
+                                                    <div class="susbcribe-top--name">
+                                                        <input type="radio" name="price" id="subscribe">
+                                                        <label for="subscribe">Subscribe and Save 10%</label>
+                                                    </div>
+                                                    <div class="subscribe-top--price">
+                                                        $ <span class="subscribe-price">37.7</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-subscribe--bottom">
+                                                    <input type="number" value="15">
+                                                </div>
+                                            </div>
+                                            <div class="product-purchase d-flex justify-content-between">
+                                                <div class="product-purchase--left">
+                                                    <input type="radio" name="price" id="purchase">
+                                                    <label for="purchase">One-Time Purchase</label>
+                                                </div>
+                                                <div class="product-purchase--right">
+                                                    $<span class="purchase-price">41.95</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="product-addToCart">Add to Cart</button>
+                                        <a href="#" class="product-learnMore">Learn More</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

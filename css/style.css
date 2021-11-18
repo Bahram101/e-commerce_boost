@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,14 +92,24 @@ time, mark, audio, video {
   outline: 0;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
   color: black;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -39,16 +117,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -364,6 +446,7 @@ textarea {
   padding: 0.2em 0;
 }
 
+/*--------------------------------------------------------------------------------------*/
 body {
   color: #000;
   font-family: Roboto;
@@ -427,7 +510,7 @@ header .header__bottom .header__icons .icons-list .icon-item {
           flex-direction: column;
 }
 header .header__bottom .header__icons .icons-list .icon-item p {
-  color: #E2281B;
+  color: #e2281b;
   font-family: Roboto;
   font-weight: 700;
 }
@@ -444,7 +527,7 @@ header .header__bottom .header__icons .icons-list .icon-item a {
           align-items: center;
 }
 header .header__bottom .header__icons .icons-list .icon-item a p {
-  color: #E2281B;
+  color: #e2281b;
   font-family: Roboto;
   font-weight: 700;
 }
@@ -452,7 +535,92 @@ header .header__bottom .header__icons .icons-list .icon-item:first-child {
   margin-left: 0;
 }
 
+main {
+  margin: 0 auto;
+}
 main .breadcrumb {
   background-color: transparent;
   padding-left: 0;
+}
+main .content .product-list .product-item {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 248, 250, 0)), color-stop(47.4%, rgba(244, 248, 250, 0)), to(#f4f8fa));
+  background: linear-gradient(180deg, rgba(244, 248, 250, 0) 0%, rgba(244, 248, 250, 0) 47.4%, #f4f8fa 100%);
+  margin-bottom: 30px;
+  border: 1px solid #e0e9ee;
+  padding: 32px;
+}
+main .content .product-list .product-item .product-title {
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+main .content .product-list .product-item .product-img {
+  text-align: center;
+  margin-bottom: 15px;
+}
+main .content .product-list .product-item .product-flavors {
+  margin-bottom: 25px;
+}
+main .content .product-list .product-item .product-flavors .selectpicker {
+  width: 100%;
+  border-color: #d5e1ea;
+  border-radius: 5px;
+  padding: 7px 38px 5px 10px;
+}
+main .content .product-list .product-item .product-prices .product-subscribe .product-subscribe--top {
+  margin-bottom: 12px;
+}
+main .content .product-list .product-item .product-prices .product-subscribe .product-subscribe--top .susbcribe-top--name label {
+  font-size: 14px;
+}
+main .content .product-list .product-item .product-prices .product-subscribe .product-subscribe--top .subscribe-top--price {
+  font-weight: 700;
+}
+main .content .product-list .product-item .product-prices .product-subscribe .product-subscribe--bottom {
+  margin-bottom: 34px;
+}
+main .content .product-list .product-item .product-prices .product-subscribe .product-subscribe--bottom input {
+  width: 100%;
+  border: none;
+  border: 1px solid #d5e1ea;
+  border-radius: 5px;
+  padding: 7px 11px 5px 10px;
+}
+main .content .product-list .product-item .product-prices .product-purchase {
+  margin-bottom: 28px;
+}
+main .content .product-list .product-item .product-prices .product-purchase .product-purchase--right {
+  font-weight: 700;
+}
+main .content .product-list .product-item button.product-addToCart {
+  background-color: #e0251b;
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 0;
+  font-weight: 500;
+}
+main .content .product-list .product-item .product-learnMore {
+  font-weight: 500;
+  display: block;
+  font-size: 14px;
+  color: #e0251b;
+  text-align: center;
+  margin-top: 12px;
+}
+
+@media (min-width: 1350px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1350px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1350px;
+  }
 }
