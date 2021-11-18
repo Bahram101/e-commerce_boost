@@ -569,6 +569,9 @@ main .content .product-list .product-item .product-flavors .selectpicker {
   border-radius: 5px;
   padding: 7px 38px 5px 10px;
 }
+main .content .product-list .product-item .product-prices label:hover {
+  cursor: pointer;
+}
 main .content .product-list .product-item .product-prices .product-subscribe .product-subscribe--top {
   margin-bottom: 12px;
 }
@@ -603,6 +606,9 @@ main .content .product-list .product-item button.product-addToCart {
   padding: 10px 0;
   font-weight: 500;
 }
+main .content .product-list .product-item button.product-addToCart i {
+  margin-right: 5px;
+}
 main .content .product-list .product-item .product-learnMore {
   font-weight: 500;
   display: block;
@@ -622,5 +628,11 @@ main .content .product-list .product-item .product-learnMore {
   .container {
     margin: 0 auto;
     max-width: 1350px;
+  }
+}
+@media (min-width: 767px) {
+  .container {
+    margin: 0 auto;
+    max-width: 767px;
   }
 }

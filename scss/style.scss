@@ -564,13 +564,18 @@ main {
                         padding: 7px 38px 5px 10px;
                     }
                 }
-                .product-prices {
+                .product-prices {   
+                    label{
+                        &:hover{
+                            cursor:pointer;
+                        }
+                    }                
                     .product-subscribe {
                         .product-subscribe--top {
                             margin-bottom: 12px;
                             .susbcribe-top--name {
                                 label {
-                                    font-size: 14px;
+                                    font-size: 14px;                                    
                                 }
                             }
                             .subscribe-top--price {
@@ -603,6 +608,9 @@ main {
                     border-radius: 4px;
                     padding: 10px 0;
                     font-weight: 500;
+                    i{
+                        margin-right: 5px;
+                    }
                 }
                 .product-learnMore {
                     font-weight: 500;
@@ -631,5 +639,11 @@ footer {
     .container {
         margin: 0 auto;
         max-width: 1350px;
+    }
+}
+@media (min-width: 767px) {
+    .container {
+        margin: 0 auto;
+        max-width: 767px;
     }
 }
